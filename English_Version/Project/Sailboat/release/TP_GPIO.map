@@ -1,0 +1,635 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+                              ./release/servomotor.o (__aeabi_dsub)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+                              ./release/reception.o (__aeabi_dmul)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixdfsi.o)
+                              ./release/battery.o (__aeabi_d2iz)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+                              ./release/weathercock.o (__aeabi_d2uiz)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+                              ./release/reception.o (__aeabi_d2f)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+                              ./release/timer.o (__aeabi_fsub)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+                              ./release/timer.o (__aeabi_fmul)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+                              ./release/dcmotor.o (__aeabi_fcmpeq)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+                              ./release/timer.o (__aeabi_f2iz)
+c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+                              ./release/weathercock.o (__aeabi_f2uiz)
+
+Allocating common symbols
+Common symbol       size              file
+
+impluse_duration    0x2               ./release/reception.o
+mode                0x4               ./release/main.o
+ptr_fct_gpio        0x4               ./release/gpio.o
+ptr_fct_timer       0x4               ./release/timer.o
+cpt                 0x4               ./release/main.o
+stop                0x4               ./release/main.o
+ptr_fct_adc         0x4               ./release/adc.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00020000         xr
+RAM              0x20000000         0x00005000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./release/main.o
+LOAD ./release/startup-gcc.o
+LOAD ./release/reception.o
+LOAD ./release/battery.o
+LOAD ./release/weathercock.o
+LOAD ./release/servomotor.o
+LOAD ./release/rolling.o
+LOAD ./release/dcmotor.o
+LOAD ./release/adc.o
+LOAD ./release/clock.o
+LOAD ./release/gpio.o
+LOAD ./release/timer.o
+LOAD ./release/timer_systick.o
+LOAD ./release/usart.o
+LOAD c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libm.a
+START GROUP
+LOAD c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a
+LOAD c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libc.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a
+LOAD c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libc.a
+LOAD c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2\libm.a
+END GROUP
+
+.text           0x08000000     0x28b0
+ *(.isr_vector)
+ .isr_vector    0x08000000       0xec ./release/startup-gcc.o
+                0x08000000                __isr_vector
+ *(.text*)
+ .text          0x080000ec       0xf4 ./release/main.o
+                0x080000ec                scheduler_systick
+                0x0800015c                main
+ .text          0x080001e0       0x8c ./release/startup-gcc.o
+                0x080001e0                Reset_Handler
+                0x08000254                SystemInit
+                0x08000256                NMI_Handler
+                0x08000258                HardFault_Handler
+                0x0800025a                MemManage_Handler
+                0x0800025c                BusFault_Handler
+                0x0800025e                UsageFault_Handler
+                0x08000260                SVC_Handler
+                0x08000262                DebugMon_Handler
+                0x08000264                PendSV_Handler
+                0x08000268                SPI1_IRQHandler
+                0x08000268                TAMPER_IRQHandler
+                0x08000268                DMAChannel4_IRQHandler
+                0x08000268                USART3_IRQHandler
+                0x08000268                RTC_IRQHandler
+                0x08000268                I2C2_EV_IRQHandler
+                0x08000268                CAN1_RX1_IRQHandler
+                0x08000268                I2C1_EV_IRQHandler
+                0x08000268                RCC_IRQHandler
+                0x08000268                DMAChannel7_IRQHandler
+                0x08000268                DMAChannel5_IRQHandler
+                0x08000268                DMAChannel2_IRQHandler
+                0x08000268                SPI2_IRQHandler
+                0x08000268                DMAChannel1_IRQHandler
+                0x08000268                PVD_IRQHandler
+                0x08000268                USB_LP_CAN1_RX0_IRQHandler
+                0x08000268                TIM1_CC_IRQHandler
+                0x08000268                USB_HP_CAN1_TX_IRQHandler
+                0x08000268                TIM1_UP_IRQHandler
+                0x08000268                WWDG_IRQHandler
+                0x08000268                TIM1_BRK_IRQHandler
+                0x08000268                RTCAlarm_IRQHandler
+                0x08000268                USART2_IRQHandler
+                0x08000268                I2C2_ER_IRQHandler
+                0x08000268                CAN1_SCE_IRQHandler
+                0x08000268                FLASH_IRQHandler
+                0x08000268                DMAChannel6_IRQHandler
+                0x08000268                DMAChannel3_IRQHandler
+                0x08000268                TIM1_TRG_COM_IRQHandler
+                0x08000268                USART1_IRQHandler
+                0x08000268                I2C1_ER_IRQHandler
+                0x08000268                USBWakeUp_IRQHandler
+ *fill*         0x0800026c        0x4 
+ .text          0x08000270       0xb8 ./release/reception.o
+                0x08000270                fct_IT
+                0x0800028c                init_reception
+                0x080002e4                launch_reception
+                0x080002f4                received_impulse_duration
+ .text          0x08000328       0xd4 ./release/battery.o
+                0x08000328                no_battery
+                0x08000338                init_battery_monitoring
+                0x08000368                battery_level
+                0x080003a0                init_limit_value_battery
+ .text          0x080003fc       0xa8 ./release/weathercock.o
+                0x080003fc                weathercock_reset
+                0x0800040c                init_weathercock
+                0x08000474                wind_angle
+ *fill*         0x080004a4        0x4 
+ .text          0x080004a8      0x130 ./release/servomotor.o
+                0x080004a8                servomotor_angle
+                0x08000520                servomotor_impluse_duration
+                0x08000560                init_servomotor
+                0x080005a8                launch_servomotor
+                0x080005b8                action_servomotor
+ .text          0x080005d8       0x88 ./release/rolling.o
+                0x080005d8                angle_exceeded
+                0x080005e8                rolling_angle_checking
+                0x08000624                init_rolling_monitoring
+                0x08000650                launch_rolling_monitoring
+ .text          0x08000660      0x150 ./release/dcmotor.o
+                0x08000660                init_DCmotor
+                0x080006b8                launch_DCmotor
+                0x080006c4                stop_DCmotor
+                0x080006e0                action_DCmotor
+                0x080006f8                impulse_duration_DCmotor
+ .text          0x080007b0      0x2c0 ./release/adc.o
+                0x080007b0                ADC_IRQHandler
+                0x08000804                ADC_Init_Clock
+                0x08000834                ADC_Launch_Acq
+                0x0800085c                ADC_init
+                0x080008a8                ADC_init_sequence_channel
+                0x0800095c                Adc_init_IT
+                0x080009b4                Adc_value
+                0x080009c8                Init_ADC_Watchdog
+                0x08000a04                ADC_AnalogWatchdogThresholdsConfig
+                0x08000a2c                ADC_AnalogWatchdogSingleChannelConfig
+                0x08000a54                ADC_AnalogWatchdogAllChannelConfig
+ .text          0x08000a70       0xa8 ./release/clock.o
+                0x08000a70                CLOCK_Configure
+                0x08000af0                CLOCK_GetTIMCLK
+                0x08000af8                CLOCK_GetHCLK
+                0x08000b00                CLOCK_GetPCLK1
+                0x08000b08                CLOCK_GetPCLK2
+                0x08000b10                CLOCK_GetADCCLK
+ .text          0x08000b18      0x5a4 ./release/gpio.o
+                0x08000b18                EXTI0_IRQHandler
+                0x08000b34                EXTI1_IRQHandler
+                0x08000b50                EXTI2_IRQHandler
+                0x08000b6c                EXTI3_IRQHandler
+                0x08000b88                EXTI4_IRQHandler
+                0x08000ba4                EXTI9_5_IRQHandler
+                0x08000bc0                EXTI15_10_IRQHandler
+                0x08000bdc                Clock_Init_GPIO
+                0x08000c3c                Clock_Init_AFIO
+                0x08000c4c                Port_IO_Init_Output
+                0x08000cb8                Port_IO_Init_Input
+                0x08000d10                Port_IO_Set
+                0x08000d20                Port_IO_Reset
+                0x08000d34                Port_IO_Read
+                0x08000d48                Init_It_GPIO
+ *fill*         0x080010bc        0x4 
+ .text          0x080010c0      0x7b8 ./release/timer.o
+                0x080010c0                TIM2_IRQHandler
+                0x080010f4                TIM3_IRQHandler
+                0x08001128                TIM4_IRQHandler
+                0x0800115c                Clock_Init
+                0x08001164                Timer_1234_Init_Clock
+                0x080011c4                Timer_1234_Init_Duree
+                0x080012a4                PWM_Init
+                0x080014bc                PWM_Modif_Period
+                0x080015bc                Launch_Timer
+                0x080015c8                Init_Tim_Encoder
+                0x08001650                Valeur_Tim
+                0x08001658                Reset_Valeur_Tim
+                0x08001660                init_timer_pwm_input
+                0x080016c4                CC_Value
+                0x080016e8                Timer_Active_IT
+                0x08001794                Timer_Active_IT_CC
+ .text          0x08001878       0xe8 ./release/timer_systick.o
+                0x08001878                Systick_Prio_IT
+                0x080018a4                Systick_Period
+                0x08001950                SysTick_Handler
+ .text          0x08001960       0x58 ./release/usart.o
+                0x08001960                Init_Usart_Emission
+                0x080019b4                Send_Transmission
+ .text          0x080019b8      0x370 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x080019b8                __aeabi_drsub
+                0x080019c0                __aeabi_dsub
+                0x080019c0                __subdf3
+                0x080019c4                __aeabi_dadd
+                0x080019c4                __adddf3
+                0x08001c3c                __floatunsidf
+                0x08001c3c                __aeabi_ui2d
+                0x08001c5c                __floatsidf
+                0x08001c5c                __aeabi_i2d
+                0x08001c80                __aeabi_f2d
+                0x08001c80                __extendsfdf2
+                0x08001cbc                __floatundidf
+                0x08001cbc                __aeabi_ul2d
+                0x08001ccc                __floatdidf
+                0x08001ccc                __aeabi_l2d
+ .text          0x08001d28      0x424 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x08001d28                __aeabi_dmul
+                0x08001d28                __muldf3
+                0x08001f7c                __divdf3
+                0x08001f7c                __aeabi_ddiv
+ .text          0x0800214c       0x50 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixdfsi.o)
+                0x0800214c                __aeabi_d2iz
+                0x0800214c                __fixdfsi
+ .text          0x0800219c       0x40 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+                0x0800219c                __aeabi_d2uiz
+                0x0800219c                __fixunsdfsi
+ .text          0x080021dc       0xa0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+                0x080021dc                __truncdfsf2
+                0x080021dc                __aeabi_d2f
+ .text          0x0800227c      0x21c c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+                0x0800227c                __aeabi_frsub
+                0x08002284                __subsf3
+                0x08002284                __aeabi_fsub
+                0x08002288                __aeabi_fadd
+                0x08002288                __addsf3
+                0x080023e8                __aeabi_ui2f
+                0x080023e8                __floatunsisf
+                0x080023f0                __aeabi_i2f
+                0x080023f0                __floatsisf
+                0x0800240c                __aeabi_ul2f
+                0x0800240c                __floatundisf
+                0x0800241c                __aeabi_l2f
+                0x0800241c                __floatdisf
+ .text          0x08002498      0x2a0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+                0x08002498                __mulsf3
+                0x08002498                __aeabi_fmul
+                0x08002600                __aeabi_fdiv
+                0x08002600                __divsf3
+ .text          0x08002738       0xec c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+                0x08002738                __gesf2
+                0x08002738                __gtsf2
+                0x08002740                __lesf2
+                0x08002740                __ltsf2
+                0x08002748                __nesf2
+                0x08002748                __eqsf2
+                0x08002748                __cmpsf2
+                0x080027a8                __aeabi_cfrcmple
+                0x080027b0                __aeabi_cfcmpeq
+                0x080027b0                __aeabi_cfcmple
+                0x080027c0                __aeabi_fcmpeq
+                0x080027d4                __aeabi_fcmplt
+                0x080027e8                __aeabi_fcmple
+                0x080027fc                __aeabi_fcmpge
+                0x08002810                __aeabi_fcmpgt
+ .text          0x08002824       0x4c c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+                0x08002824                __aeabi_f2iz
+                0x08002824                __fixsfsi
+ .text          0x08002870       0x40 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+                0x08002870                __fixunssfsi
+                0x08002870                __aeabi_f2uiz
+ *(.init)
+ *(.fini)
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ *(.eh_frame*)
+
+.glue_7         0x080028b0        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x080028b0        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x080028b0        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x080028b0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x080028b0        0x0
+ .iplt          0x00000000        0x0 ./release/main.o
+
+.rel.dyn        0x080028b0        0x0
+ .rel.iplt      0x00000000        0x0 ./release/main.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x080028b0                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x080028b0                __exidx_end = .
+                0x080028b0                __etext = .
+
+.data           0x20000000        0x0 load address 0x080028b0
+                0x20000000                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data          0x20000000        0x0 ./release/main.o
+ .data          0x20000000        0x0 ./release/startup-gcc.o
+ .data          0x20000000        0x0 ./release/reception.o
+ .data          0x20000000        0x0 ./release/battery.o
+ .data          0x20000000        0x0 ./release/weathercock.o
+ .data          0x20000000        0x0 ./release/servomotor.o
+ .data          0x20000000        0x0 ./release/rolling.o
+ .data          0x20000000        0x0 ./release/dcmotor.o
+ .data          0x20000000        0x0 ./release/adc.o
+ .data          0x20000000        0x0 ./release/clock.o
+ .data          0x20000000        0x0 ./release/gpio.o
+ .data          0x20000000        0x0 ./release/timer.o
+ .data          0x20000000        0x0 ./release/timer_systick.o
+ .data          0x20000000        0x0 ./release/usart.o
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixdfsi.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+ .data          0x20000000        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x20000000                PROVIDE (__preinit_array_end, .)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x20000000                PROVIDE (__init_array_end, .)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x20000000                PROVIDE (__fini_array_end, .)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                __data_end__ = .
+
+.igot.plt       0x20000000        0x0 load address 0x080028b0
+ .igot.plt      0x00000000        0x0 ./release/main.o
+
+.bss            0x20000000       0x20 load address 0x080028b0
+                0x20000000                __bss_start__ = .
+ *(.bss*)
+ .bss           0x20000000        0x0 ./release/main.o
+ .bss           0x20000000        0x0 ./release/startup-gcc.o
+ .bss           0x20000000        0x0 ./release/reception.o
+ .bss           0x20000000        0x0 ./release/battery.o
+ .bss           0x20000000        0x0 ./release/weathercock.o
+ .bss           0x20000000        0x0 ./release/servomotor.o
+ .bss           0x20000000        0x0 ./release/rolling.o
+ .bss           0x20000000        0x0 ./release/dcmotor.o
+ .bss           0x20000000        0x0 ./release/adc.o
+ .bss           0x20000000        0x0 ./release/clock.o
+ .bss           0x20000000        0x0 ./release/gpio.o
+ .bss           0x20000000        0x0 ./release/timer.o
+ .bss           0x20000000        0x4 ./release/timer_systick.o
+ .bss           0x20000004        0x0 ./release/usart.o
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixdfsi.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+ .bss           0x20000004        0x0 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+ *(COMMON)
+ COMMON         0x20000004        0xc ./release/main.o
+                0x20000004                mode
+                0x20000008                cpt
+                0x2000000c                stop
+ COMMON         0x20000010        0x2 ./release/reception.o
+                0x20000010                impluse_duration
+ *fill*         0x20000012        0x2 
+ COMMON         0x20000014        0x4 ./release/adc.o
+                0x20000014                ptr_fct_adc
+ COMMON         0x20000018        0x4 ./release/gpio.o
+                0x20000018                ptr_fct_gpio
+ COMMON         0x2000001c        0x4 ./release/timer.o
+                0x2000001c                ptr_fct_timer
+                0x20000020                __bss_end__ = .
+
+.heap           0x20000020      0x800
+                0x20000020                __end__ = .
+                0x20000020                end = __end__
+                0x20000020                _end = __end__
+ *(.heap*)
+ .heap          0x20000020      0x800 ./release/startup-gcc.o
+                0x20000020                __HeapBase
+                0x20000820                __HeapLimit = .
+
+.stack_dummy    0x20000020      0xc00
+ *(.stack)
+ .stack         0x20000020      0xc00 ./release/startup-gcc.o
+                0x20005000                __StackTop = (ORIGIN (RAM) + 0x5000)
+                0x20004400                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x20005000                PROVIDE (__stack, __StackTop)
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
+OUTPUT(./release/TP_GPIO.elf elf32-littlearm)
+
+.debug_info     0x00000000     0x471e
+ .debug_info    0x00000000      0x411 ./release/main.o
+ .debug_info    0x00000411       0xa8 ./release/startup-gcc.o
+ .debug_info    0x000004b9      0x5c4 ./release/reception.o
+ .debug_info    0x00000a7d      0x431 ./release/battery.o
+ .debug_info    0x00000eae      0x5cc ./release/weathercock.o
+ .debug_info    0x0000147a      0x5fd ./release/servomotor.o
+ .debug_info    0x00001a77      0x37b ./release/rolling.o
+ .debug_info    0x00001df2      0x67a ./release/dcmotor.o
+ .debug_info    0x0000246c      0x66c ./release/adc.o
+ .debug_info    0x00002ad8      0x560 ./release/clock.o
+ .debug_info    0x00003038      0x6a7 ./release/gpio.o
+ .debug_info    0x000036df      0x9c6 ./release/timer.o
+ .debug_info    0x000040a5      0x3c3 ./release/timer_systick.o
+ .debug_info    0x00004468      0x2b6 ./release/usart.o
+
+.debug_abbrev   0x00000000     0x130b
+ .debug_abbrev  0x00000000      0x1aa ./release/main.o
+ .debug_abbrev  0x000001aa       0x14 ./release/startup-gcc.o
+ .debug_abbrev  0x000001be      0x165 ./release/reception.o
+ .debug_abbrev  0x00000323      0x18c ./release/battery.o
+ .debug_abbrev  0x000004af      0x158 ./release/weathercock.o
+ .debug_abbrev  0x00000607      0x174 ./release/servomotor.o
+ .debug_abbrev  0x0000077b      0x15c ./release/rolling.o
+ .debug_abbrev  0x000008d7      0x174 ./release/dcmotor.o
+ .debug_abbrev  0x00000a4b      0x183 ./release/adc.o
+ .debug_abbrev  0x00000bce      0x125 ./release/clock.o
+ .debug_abbrev  0x00000cf3      0x199 ./release/gpio.o
+ .debug_abbrev  0x00000e8c      0x254 ./release/timer.o
+ .debug_abbrev  0x000010e0      0x165 ./release/timer_systick.o
+ .debug_abbrev  0x00001245       0xc6 ./release/usart.o
+
+.debug_loc      0x00000000     0x160d
+ .debug_loc     0x00000000       0x40 ./release/main.o
+ .debug_loc     0x00000040       0x80 ./release/reception.o
+ .debug_loc     0x000000c0       0xe4 ./release/battery.o
+ .debug_loc     0x000001a4       0x60 ./release/weathercock.o
+ .debug_loc     0x00000204      0x18f ./release/servomotor.o
+ .debug_loc     0x00000393       0x7e ./release/rolling.o
+ .debug_loc     0x00000411      0x145 ./release/dcmotor.o
+ .debug_loc     0x00000556      0x24a ./release/adc.o
+ .debug_loc     0x000007a0       0x21 ./release/clock.o
+ .debug_loc     0x000007c1      0x570 ./release/gpio.o
+ .debug_loc     0x00000d31      0x797 ./release/timer.o
+ .debug_loc     0x000014c8      0x145 ./release/timer_systick.o
+
+.debug_aranges  0x00000000      0x1c0
+ .debug_aranges
+                0x00000000       0x20 ./release/main.o
+ .debug_aranges
+                0x00000020       0x20 ./release/startup-gcc.o
+ .debug_aranges
+                0x00000040       0x20 ./release/reception.o
+ .debug_aranges
+                0x00000060       0x20 ./release/battery.o
+ .debug_aranges
+                0x00000080       0x20 ./release/weathercock.o
+ .debug_aranges
+                0x000000a0       0x20 ./release/servomotor.o
+ .debug_aranges
+                0x000000c0       0x20 ./release/rolling.o
+ .debug_aranges
+                0x000000e0       0x20 ./release/dcmotor.o
+ .debug_aranges
+                0x00000100       0x20 ./release/adc.o
+ .debug_aranges
+                0x00000120       0x20 ./release/clock.o
+ .debug_aranges
+                0x00000140       0x20 ./release/gpio.o
+ .debug_aranges
+                0x00000160       0x20 ./release/timer.o
+ .debug_aranges
+                0x00000180       0x20 ./release/timer_systick.o
+ .debug_aranges
+                0x000001a0       0x20 ./release/usart.o
+
+.debug_line     0x00000000     0x1522
+ .debug_line    0x00000000      0x1e4 ./release/main.o
+ .debug_line    0x000001e4       0xb0 ./release/startup-gcc.o
+ .debug_line    0x00000294      0x171 ./release/reception.o
+ .debug_line    0x00000405      0x185 ./release/battery.o
+ .debug_line    0x0000058a      0x173 ./release/weathercock.o
+ .debug_line    0x000006fd      0x17f ./release/servomotor.o
+ .debug_line    0x0000087c      0x18a ./release/rolling.o
+ .debug_line    0x00000a06      0x17d ./release/dcmotor.o
+ .debug_line    0x00000b83      0x188 ./release/adc.o
+ .debug_line    0x00000d0b      0x167 ./release/clock.o
+ .debug_line    0x00000e72      0x1b8 ./release/gpio.o
+ .debug_line    0x0000102a      0x245 ./release/timer.o
+ .debug_line    0x0000126f      0x173 ./release/timer_systick.o
+ .debug_line    0x000013e2      0x140 ./release/usart.o
+
+.debug_str      0x00000000      0xc76
+ .debug_str     0x00000000      0x2c2 ./release/main.o
+                                0x303 (size before relaxing)
+ .debug_str     0x000002c2      0x1de ./release/reception.o
+                                0x32d (size before relaxing)
+ .debug_str     0x000004a0      0x154 ./release/battery.o
+                                0x28e (size before relaxing)
+ .debug_str     0x000005f4       0x62 ./release/weathercock.o
+                                0x301 (size before relaxing)
+ .debug_str     0x00000656       0x6a ./release/servomotor.o
+                                0x365 (size before relaxing)
+ .debug_str     0x000006c0       0x49 ./release/rolling.o
+                                0x22f (size before relaxing)
+ .debug_str     0x00000709       0x5c ./release/dcmotor.o
+                                0x374 (size before relaxing)
+ .debug_str     0x00000765      0x13c ./release/adc.o
+                                0x379 (size before relaxing)
+ .debug_str     0x000008a1       0xa8 ./release/clock.o
+                                0x319 (size before relaxing)
+ .debug_str     0x00000949       0xfc ./release/gpio.o
+                                0x335 (size before relaxing)
+ .debug_str     0x00000a45       0xeb ./release/timer.o
+                                0x457 (size before relaxing)
+ .debug_str     0x00000b30       0xe8 ./release/timer_systick.o
+                                0x244 (size before relaxing)
+ .debug_str     0x00000c18       0x5e ./release/usart.o
+                                0x1e6 (size before relaxing)
+
+.comment        0x00000000       0x30
+ .comment       0x00000000       0x30 ./release/main.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 ./release/reception.o
+ .comment       0x00000000       0x31 ./release/battery.o
+ .comment       0x00000000       0x31 ./release/weathercock.o
+ .comment       0x00000000       0x31 ./release/servomotor.o
+ .comment       0x00000000       0x31 ./release/rolling.o
+ .comment       0x00000000       0x31 ./release/dcmotor.o
+ .comment       0x00000000       0x31 ./release/adc.o
+ .comment       0x00000000       0x31 ./release/clock.o
+ .comment       0x00000000       0x31 ./release/gpio.o
+ .comment       0x00000000       0x31 ./release/timer.o
+ .comment       0x00000000       0x31 ./release/timer_systick.o
+ .comment       0x00000000       0x31 ./release/usart.o
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x33 ./release/main.o
+ .ARM.attributes
+                0x00000033       0x21 ./release/startup-gcc.o
+ .ARM.attributes
+                0x00000054       0x33 ./release/reception.o
+ .ARM.attributes
+                0x00000087       0x33 ./release/battery.o
+ .ARM.attributes
+                0x000000ba       0x33 ./release/weathercock.o
+ .ARM.attributes
+                0x000000ed       0x33 ./release/servomotor.o
+ .ARM.attributes
+                0x00000120       0x33 ./release/rolling.o
+ .ARM.attributes
+                0x00000153       0x33 ./release/dcmotor.o
+ .ARM.attributes
+                0x00000186       0x33 ./release/adc.o
+ .ARM.attributes
+                0x000001b9       0x33 ./release/clock.o
+ .ARM.attributes
+                0x000001ec       0x33 ./release/gpio.o
+ .ARM.attributes
+                0x0000021f       0x33 ./release/timer.o
+ .ARM.attributes
+                0x00000252       0x33 ./release/timer_systick.o
+ .ARM.attributes
+                0x00000285       0x33 ./release/usart.o
+ .ARM.attributes
+                0x000002b8       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x000002d1       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x000002ea       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x00000303       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x0000031c       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x00000335       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x0000034e       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x00000367       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_cmpsf2.o)
+ .ARM.attributes
+                0x00000380       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixsfsi.o)
+ .ARM.attributes
+                0x00000399       0x19 c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2\libgcc.a(_arm_fixunssfsi.o)
+
+.debug_frame    0x00000000      0x76c
+ .debug_frame   0x00000000       0x40 ./release/main.o
+ .debug_frame   0x00000040       0x70 ./release/reception.o
+ .debug_frame   0x000000b0       0x6c ./release/battery.o
+ .debug_frame   0x0000011c       0x5c ./release/weathercock.o
+ .debug_frame   0x00000178       0x88 ./release/servomotor.o
+ .debug_frame   0x00000200       0x68 ./release/rolling.o
+ .debug_frame   0x00000268       0x88 ./release/dcmotor.o
+ .debug_frame   0x000002f0       0xd0 ./release/adc.o
+ .debug_frame   0x000003c0       0x70 ./release/clock.o
+ .debug_frame   0x00000430      0x150 ./release/gpio.o
+ .debug_frame   0x00000580      0x164 ./release/timer.o
+ .debug_frame   0x000006e4       0x58 ./release/timer_systick.o
+ .debug_frame   0x0000073c       0x30 ./release/usart.o
