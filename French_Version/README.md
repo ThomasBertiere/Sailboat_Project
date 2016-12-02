@@ -1,16 +1,16 @@
 # Sailboat_Project
 
 
-Remote-controlled sailboat
+Voilier controlé par télécommande
 
-During this project we designed and developped an embedded software in the aim to control a model sailboat with a remote. We also implemented functions such as battery monitoring, boat rolling monitoring and sail sheeting depending on the wind angle. To do so, we worked with:
+Durant ce projet nous avons conçu un logiciel embarqué ayant pour but de controler un voilier de modélisme à l'aide d'une télécommande. Nous avons aussi implémenté des fonctions telles que la surveillance de la batterie, le contrôle du roulis du voilier et le bordage des voiles en fonction de l'angle du vent. Pour ce faire, nous avons travaillé avec : 
 
-        -	A model sailboat made up with sensors (accelerometer, rotary/incremental encoder, HF receiver), actuators (servomotor, HF transmitter, DC motor) and different components (battery, remote, weathercock, sail).
-        -	A microcontroller card build-in the model sailboat. This microcontroller was a STM32-H103 containing an ARM Cortex-M3 processor running up to 72MHz. 
-        -	Keil µVision 4 to develop our embedded software in C and assembly language. 
+        - un voilier de modélisme équipé de capteurs (accéléromètre, encodeur incrémental, récepteur HF), d'actionneurs (servomoteur, transmetteur HF, moteur à courant continu) et de différents composants (batterie, télécommande, voile, girouette).
+        - une carte microcontroleur insérée dans le voilier. Cette carte était une STM32-H103 contenant un processeur ARM Cortex-M3 d'une fréquence de 72MHz.
+        - le logiciel Keil µVision 4 pour développer notre logiciel embarqué en langage C et en assembleur.
 
-The first step of our project was the design. We identified the mains actors and parameters of our system and for each component, we listed functions and peripherals they will need. The second phase was the embedded software development. The whole development has been made respecting the following software layer:
+La première étape de notre projet a été la conception. Nous avons identifié les principaux acteurs et paramètres de notre système et, pour chaque composant, nous avons listé les fonctions et les périphériques dont ils auront besoin. La seconde phase a été le développement de notre logiciel embarqué. L'intégralité du développement a été fait en respectant les couches logicielles suivantes :
 
-        -	Lower layer – drivers: development of peripherals sources code: ADC, Timer, GPIO, NVIC.
-        -	Middle layer – services: development of components’ library using the driver layer: battery, DC motor, servomotor, weathercock, accelerometer.
-        -	Upper layer – application: Implementation of the scheduler.
+        - Couche inférieure - Pilotes/Drivers : développement des codes sources des périphériques : ADC, Timers, GPIO, NVIC.
+        - Couche médiane - Services : développement des librairies des composants du voilier en utilisant la couche pilote.
+        - Couche supérieure : implémentation de l'ordonnanceur.
