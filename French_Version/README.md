@@ -14,3 +14,6 @@ La première étape de notre projet a été la conception. Nous avons identifié
 - Couche inférieure - Pilotes/Drivers : développement des codes sources des périphériques : ADC, Timers, GPIO, NVIC.
 - Couche médiane - Services : développement des librairies des composants du voilier en utilisant la couche pilote.
 - Couche supérieure : implémentation de l'ordonnanceur.
+
+Une photo de notre voilier est présente dans le dossier : 
+![Image du voilier](./voilier.JPG)
