@@ -16,4 +16,4 @@ La première étape de notre projet a été la conception. Nous avons identifié
 - Couche supérieure : implémentation de l'ordonnanceur.
 
 Une photo de notre voilier est présente dans le dossier : 
-![Image du voilier](./voilier.JPG)
+![Image du voilier](./voilier.png)
