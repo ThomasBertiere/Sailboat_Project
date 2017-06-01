@@ -15,5 +15,5 @@ La première étape de notre projet a été la conception. Nous avons identifié
 - Couche médiane - Services : développement des librairies des composants du voilier en utilisant la couche pilote.
 - Couche supérieure : implémentation de l'ordonnanceur.
 
-Une photo de notre voilier est présente dans le dossier : 
+##  Photo du voilier
 ![Image du voilier](./voilier.png)

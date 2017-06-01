@@ -14,5 +14,5 @@ The first step of our project was the design. We identified the mains actors and
 - Middle layer – services: development of components’ library using the driver layer: battery, DC motor, servomotor, weathercock, accelerometer.
 - Upper layer – application: Implementation of the scheduler.
 
-A photo of our sailboat can be found in the folder : 
+## Sailboat photo
 ![Sailboat photo](./sailboat.png)
